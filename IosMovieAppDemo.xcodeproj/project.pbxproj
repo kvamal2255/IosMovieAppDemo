@@ -37,6 +37,7 @@
 		7A63DC4D2C307D8F004F4539 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63DC3C2C307D8F004F4539 /* MovieListViewModel.swift */; };
 		7A63DC4E2C307D8F004F4539 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A63DC3F2C307D8F004F4539 /* SplashView.swift */; };
 		7A63DC512C307DC6004F4539 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7A63DC502C307DC6004F4539 /* SDWebImageSwiftUI */; };
+		7A63DC532C307F75004F4539 /* MovieData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A63DC522C307F75004F4539 /* MovieData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		7A63DC3A2C307D8F004F4539 /* MovieListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		7A63DC3C2C307D8F004F4539 /* MovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		7A63DC3F2C307D8F004F4539 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		7A63DC522C307F75004F4539 /* MovieData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MovieData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				7A63DC072C307D22004F4539 /* Info.plist */,
-				7A63DC432C307D8F004F4539 /* Source */,
-				7A63DC272C307D7B004F4539 /* Utilities */,
 				7A63DC172C307D6B004F4539 /* SupportingFiles */,
+				7A63DC272C307D7B004F4539 /* Utilities */,
+				7A63DC432C307D8F004F4539 /* Source */,
 				7A63DBDD2C307CE1004F4539 /* IosMovieAppDemoApp.swift */,
+				7A63DC522C307F75004F4539 /* MovieData.json */,
 				7A63DBE32C307CE3004F4539 /* Preview Content */,
 			);
 			path = IosMovieAppDemo;
@@ -494,6 +497,7 @@
 				7A63DC1D2C307D6B004F4539 /* PlusJakartaSans-Bold.ttf in Resources */,
 				7A63DC202C307D6B004F4539 /* PlusJakartaSans-SemiBold.ttf in Resources */,
 				7A63DC1E2C307D6B004F4539 /* PlusJakartaSans-Light.ttf in Resources */,
+				7A63DC532C307F75004F4539 /* MovieData.json in Resources */,
 				7A63DC1F2C307D6B004F4539 /* PlusJakartaSans-Medium.ttf in Resources */,
 				7A63DC212C307D6B004F4539 /* Assets.xcassets in Resources */,
 				7A63DBE52C307CE3004F4539 /* Preview Assets.xcassets in Resources */,
