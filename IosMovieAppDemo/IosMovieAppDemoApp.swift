@@ -14,4 +14,8 @@ struct IosMovieAppDemoApp: App {
             SplashView()
         }
     }
+    
+    init() {
+        NavigationAppearance.setThemeNavigationStyle()
+    }
 }

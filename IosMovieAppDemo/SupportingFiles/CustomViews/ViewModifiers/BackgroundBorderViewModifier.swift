@@ -31,7 +31,7 @@ struct BackgroundBorderViewModifier: ViewModifier {
 }
 
 extension View {
-    func addBackgroundBorder(verticalPadding: CGFloat = 10, horizontalPadding: CGFloat = 17, backgroundColor: Color = Color.white, strokeColor: Color = Color.blue.opacity(0.5), height: CGFloat? = nil, width: CGFloat? = nil, cornerRadius: CGFloat = 8, borderWidth: CGFloat = 1) -> some View {
+    func addBackgroundBorder(verticalPadding: CGFloat = 10, horizontalPadding: CGFloat = 17, backgroundColor: Color = Color.white, strokeColor: Color = Color.black, height: CGFloat? = nil, width: CGFloat? = nil, cornerRadius: CGFloat = 8, borderWidth: CGFloat = 1) -> some View {
         modifier(BackgroundBorderViewModifier(cornerRadius: cornerRadius, verticalPadding: verticalPadding, horizontalPadding: horizontalPadding, backgroundColor: backgroundColor, strokeColor: strokeColor, borderWidth: borderWidth, width: width, height: height))
     }
 }

@@ -29,7 +29,7 @@ struct SplashView: View {
             Color.blue.opacity(0.5)
                 .ignoresSafeArea()
             
-            Text("Movie DataBase")
+            Text("Movie Hub")
                 .foregroundColor(.white)
                 .font(.jakartaBold(20))
         }
