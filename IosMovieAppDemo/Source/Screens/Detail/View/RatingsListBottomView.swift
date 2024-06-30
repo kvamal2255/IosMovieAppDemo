@@ -31,8 +31,10 @@ struct RatingsListBottomView: View {
                                 .font(.jakartaLight(14))
                                 .padding(.vertical, 5)
                                 .onTapGesture {
-                                    selectedRating = ratingsList[index]
-                                    viewerShown = false
+                                    withAnimation {
+                                        selectedRating = ratingsList[index]
+                                        viewerShown = false
+                                    }
                                 }
                         }
                     }
@@ -60,15 +62,15 @@ struct RatingsListBottomView: View {
                 Spacer()
                 
                 Button {
-                    viewerShown = false
+                    withAnimation {
+                        viewerShown = false
+                    }
                 } label: {
                     Text("Done")
                         .foregroundColor(.blue)
                         .font(.jakartaMedium(13))
                 }
-                
             }
-           
         }
         .padding(.vertical)
     }

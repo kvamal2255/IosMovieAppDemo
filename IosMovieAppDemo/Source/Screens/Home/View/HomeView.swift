@@ -14,7 +14,7 @@ struct HomeView: View {
     @State private var selectedCategory: MovieCategoryType?
     
     var body: some View {
-        NavigationStack {
+        Navigator {
             ZStack {
                 Color.white.ignoresSafeArea()
                 
@@ -46,7 +46,7 @@ struct HomeView: View {
             }
             .navigationTitle("Movie Database")
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear {
+            .onLoad {
                 viewModel.getData()
             }
         }
@@ -111,7 +111,11 @@ struct HomeView: View {
     var movieList: some View {
         VStack(spacing: 15) {
             ForEach(viewModel.filteredMovies.indices, id: \.self) { index in
-                MovieItemView(movie: viewModel.filteredMovies[index])
+                NavigationLink {
+                    MovieDetailView(viewModel: .init(movie: viewModel.filteredMovies[index]))
+                } label: {
+                    MovieItemView(movie: viewModel.filteredMovies[index])
+                }
             }
         }
     }

@@ -21,11 +21,18 @@ struct MovieItemView: View {
                     .foregroundColor(.black)
                     .font(.jakartaMedium(14))
                 
-                Text("Language: \(movie.language)")
-                    .foregroundColor(.black)
-                    .font(.jakartaLight(13))
+                HStack(alignment: .top) {
+                    Text("Language:")
+                        .foregroundColor(.black)
+                        .font(.jakartaLight(13))
+                    
+                    Text(movie.language)
+                        .foregroundColor(.black)
+                        .font(.jakartaLight(13))
+                        .multilineTextAlignment(.leading)
+                }
                 
-                Text("Year: \(movie.year)")
+                Text("Year:  \(movie.year)")
                     .foregroundColor(.black)
                     .font(.jakartaLight(13))
 

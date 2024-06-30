@@ -33,11 +33,13 @@ struct MovieDetailView: View {
                                 .foregroundColor(.black)
                                 .font(.jakartaLight(13))
                                 .multilineTextAlignment(.leading)
+                                .lineLimit(3)
                             
                             Text(viewModel.movie.language)
                                 .foregroundColor(.black)
                                 .font(.jakartaLight(13))
                                 .multilineTextAlignment(.leading)
+                                .lineLimit(2)
                             
                             Text(viewModel.movie.released)
                                 .foregroundColor(.gray.opacity(0.8))
@@ -100,7 +102,9 @@ struct MovieDetailView: View {
                 .addBackgroundBorder()
                 .onTapGesture {
                     guard viewModel.ratingListAvailable else { return }
-                    showRatings = true
+                    withAnimation {
+                        showRatings = true
+                    }
                 }
             }
             

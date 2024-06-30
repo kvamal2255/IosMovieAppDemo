@@ -39,6 +39,8 @@ struct RemoteImageView: View {
                 .onFailure(perform: { error in
                     isFailure = true
                 })
+                .placeholder(placeholder)
+                .indicator(.activity)
                 .scaledToFill()
                 .aspectRatio(contentMode: contentMode)
                 .frame(width: size.width, height: size.height)

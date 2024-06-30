@@ -57,18 +57,9 @@ class DataManager: NSObject {
     
     
     func getYears(_ movies: [Movie]) -> [String] {
-        var yearsList = Set<String>()
-            
-            for movie in movies {
-                
-                let releaseYears = movie.year.split(separator: "–")
-                
-                for year in releaseYears {
-                    yearsList.insert(String(year))
-                }
-            }
-            
-            return Array(yearsList).sorted()
+        let yearsSet = Set(movies.map { $0.year })
+        let uniqueYears = Array(yearsSet)
+        return uniqueYears.sorted()
     }
     
     func getGenres(_ movies: [Movie]) -> [String] {
