@@ -9,6 +9,7 @@ import Foundation
 
 class DataManager: NSObject {
     
+    // getting data from the json file
     func loadData() -> [Movie]? {
         if let path = Bundle.main.path(forResource: "MovieData", ofType: "json") {
             do {
@@ -25,6 +26,7 @@ class DataManager: NSObject {
         return nil
     }
     
+    //filtering the movies by its categories
     func getCategorizedList(_ movies: [Movie], category: MovieCategoryType) -> [String] {
         switch category {
         case .year:

@@ -38,6 +38,5 @@ struct MovieListView: View {
         .backButton {
             presentationMode.wrappedValue.dismiss()
         }
-        
     }
 }

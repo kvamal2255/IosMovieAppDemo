@@ -31,6 +31,8 @@ class HomeViewModel: ObservableObject {
         return DataManager().getFilteredList(self.movies, category: category, text: item)
     }
     
+    //MARK: Search Action
+    
     func searchAction(with text: String) {
         func resetSearch() {
             filteredMovies = movies

@@ -132,6 +132,8 @@ struct MovieDetailView: View {
         .padding(.top)
     }
     
+    //MARK: Functions
+    
     func getExpandableText() -> String {
         if viewModel.movie.plot.count > 100 {
             if isExpand {
